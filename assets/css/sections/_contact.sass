@@ -1,0 +1,201 @@
+#contact
+	padding: 100px 0 50px
+	background-color: #FFF
+	text-align: center
+	position: relative 
+
+	.h1
+		+position(absolute, -2% null null 50%)
+		margin-left: -200px
+
+
+	h3
+		color: $darkblue
+		padding-top: 120px
+		font-family: 'Oswald'
+		font-weight: 300
+		letter-spacing: 2px
+
+
+
+	.social
+		text-align: center
+		padding-top: 10px
+		margin-left: -5px
+		padding-left: 0
+
+		li
+			display: inline-block
+			
+		li:first-child
+			a 
+				padding: 10px
+				// color: #50abf1
+				box-shadow: inset 0 -2px 0 #50abf1
+				text-decoration: none
+
+		li:nth-child(2)
+			a 
+				padding: 10px
+				// color: #3b599a
+				box-shadow: inset 0 -2px 0 #3b599a
+				text-decoration: none
+
+	form
+		max-width: 600px
+		margin: 50px auto
+		text-align: center
+
+
+		fieldset
+			border: none 
+
+			h4
+				color: yellow
+				display: block
+				float: left
+				display: block
+
+			li 
+				list-style-type: none
+				text-align: left
+				float: left
+
+				input 
+					height: 10px
+
+			.select-div
+				width: 100%
+				position: relative
+				
+
+				select
+					width: 88%
+					height: 40px
+					padding: 10px
+					float: right 
+					color: #777
+					background-color: #FFF
+					margin-bottom: 50px 
+					cursor: pointer
+
+
+					option 
+						font-family: 'Oswald'
+
+					
+
+				.ion-clipboard
+					position: absolute
+					top: 45px
+					left: 20px
+					font-size: 35px
+					color: grey
+
+
+				h4
+					color: grey
+					// text-align: left 
+					font-size: 12px
+
+		input 
+			height: 40px
+			margin: 10px 0
+			width: 100%
+			pointer-events: auto
+			z-index: 2
+
+		.error-msg
+			background-color: $red
+			color: white 
+			width: 100%
+			padding: 2px
+			border-radius: 5px
+			margin-bottom: 10px
+			display: none
+
+		.icon
+			position: relative 
+			
+
+			label
+				+position(absolute)
+				color: lightgrey
+				font-size: 18px
+				margin-left: 55px
+				top: 20px
+				left: -18px
+				cursor: text
+				+transition(500ms)
+
+			span 
+				position: absolute
+				display: block
+				top: 0
+				right: 0
+				color: $red
+
+
+			.ion-ios-person-outline, .ion-ios-paper-outline, .ion-ios-email-outline
+				position: absolute
+				color: lightgrey
+				font-size: 35px
+				top: 10px
+				left: 5px
+				z-index: 0
+				cursor: text
+
+
+		legend
+			color: darkgrey
+			text-align: left
+			font-size: 20px
+
+		.textarea
+			height: 150px
+			clear: both
+			width: 100%
+			margin-top: 50px
+
+
+			label
+				margin-left: 15px
+				color: grey
+
+	.submit-btn
+		+transition(500ms ease-out)
+		background-color: $darkblue
+		color: white 
+		font-family: 'Oswald'
+		text-transform: uppercase 
+		letter-spacing: 2px 
+		padding: 25px
+		font-weight: 300
+		line-height: 0
+		+transform(translateZ(0))
+		box-shadow: inset 0 0 0 4px $darkblue, 0 0 1px rgba(0, 0, 0, 0)
+		backface-visibility: hidden
+		+transition(500ms ease-out)
+		transition-property: background 
+		border: none
+
+		&:hover
+			background: none 
+			color: $darkblue
+
+@media (max-width: 475px)
+	#contact
+		.h1
+			font-size: 1.5em
+			margin-left: -160px
+
+
+
+		
+
+
+
+
+
+
+		

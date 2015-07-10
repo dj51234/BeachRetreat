@@ -1,0 +1,34 @@
+#################
+#				#
+# IMAGE SECTION #
+#				#
+#################
+
+images:
+- {name: '<span class="link">Cable Beach, Nassau, Bahamas</span>', title: '<span class="loadTitle">Sandals Resort</span>',  image: 'proj1'}
+- {name: '<span class="link">1 Valencia Dr, Miami Beach, FL 33109</span>', title: '<span class="loadTitle">Fisher Resort</span>', image: 'proj2'}
+- {name: '<span class="link">Camino a Veracruz Km 7, Panama</span>', title: '<span class="loadTitle">Playa Bonita Resort</span>', image: 'proj3'}
+
+gallery:
+- {name: 'Blue Ridge Mountains, Va.', image: '1'}
+- {name: 'Kirawira Luxury Tented Camp, Tanzania', image: '2'}
+- {name: 'Costa Rica at Peninsula Papagayo', image: '3'}
+- {name: 'Palazzo Avino, Ravello', image: '4'}
+- {name: 'Rosalie Bay Resort, Roseau', image: '5'}
+- {name: 'Capella Ixtapa', image: '6'}
+- {name: 'Splendido Mare, Portofino', image: '7'}
+- {name: 'Kaupulehu, Big Island', image: '8'}
+- {name: 'CordeValle, San Martin, Calif.', image: '9'}
+- {name: 'Park Hyatt Dubai', image: '10'}
+- {name: 'The Peninsula, Bangkok', image: '11'}
+- {name: 'El Dorado Maroma Yucatán', image: '12'}
+- {name: 'Sandals Resort', image: '13'}
+- {name: 'Fisher Resort', image: '14'}
+- {name: 'Playa Bonita Resort', image: '15'}
+
+
+testimonials:
+- {name: 'Bob Saget', image: '0'}
+- {name: 'Hello Kitty', image: '14'}
+- {name: 'Bart Wagner', image: '2'}
+

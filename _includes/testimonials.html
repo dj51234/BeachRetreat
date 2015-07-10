@@ -1,0 +1,13 @@
+<section id="testimonials">
+	<h1 class="h1">Testimonials</h1>
+	<div class="ul">
+		{% for face in site.data.settings.testimonials %}
+		<div class="face-unit">
+			<div class="quotes"><i class="ion-quote"></i></div>
+			<h2>{{face.name}}</h2>
+			<div class="face" style="background-image:url(assets/images/{{face.image}}.jpg)"></div>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates deserunt eveniet aperiam facere natus, repellendus sapiente."</p>
+		</div>
+		{% endfor %}
+	</div>
+</section>

@@ -1,0 +1,85 @@
+#about
+	text-align: center
+	position: relative
+	background-color: #FFF
+
+	.h1
+		position: absolute
+		top: 95%
+		left: 50%
+		margin-left: -65px
+
+	.about-container
+		margin: 0 auto 
+		padding: 100px 10px
+		max-width: 1200px
+		+display(flex)
+		+align-items(center)
+		+justify-content(space-around)
+	.bold-text
+		max-width: 200px
+		line-height: 40px
+		position: relative
+		z-index: 0
+		background-color: #FFF
+
+		span 
+			color: $darkblue 
+
+
+		hr
+			width: 60px
+			border: none 
+			height: 3px
+			background-color: $darkblue
+			+position(absolute, 50% -50px null null)
+			margin-top: -1.5px
+
+		strong
+			text-transform: uppercase 
+			font-weight: bold
+
+	.about-text
+		max-width: 700px
+		
+		.upper-text
+			text-align: center
+
+		h3
+			color: $darkblue
+
+		p 
+			max-width: 600px
+			margin: 0 auto
+			line-height: 28px
+
+		.lower-text
+			margin-top: 30px
+			line-height: 35px
+			ul 
+				text-align: left
+				li
+					list-style-type: none 
+					position: relative 
+
+					span 
+						background: url(../images/bullet.jpg) no-repeat center center
+						+size(15px)
+						display: block
+						+position(absolute, 10px null null -30px)
+
+@media (max-width: 905px)
+	#about 
+		.about-container 
+			flex-direction: column
+
+			.bold-text
+
+				hr
+					+position(absolute, 125% null null -25%)
+					width: 100px	
+
+			.about-text 
+				margin-top: 50px
+
+		

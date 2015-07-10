@@ -1,0 +1,100 @@
+#consultation
+	background-color: #FFF
+	position: relative
+	text-align: center
+	margin: 0
+	height: auto
+	padding: 100px 0 130px 0
+
+
+	.con-form
+		display: none
+		form 
+			max-width: 400px
+			margin: 0 auto
+			padding: 50px
+			background-color: #white
+			display: block
+			input 
+				display: block
+				width: 100%
+				margin: 20px 0
+				text-align: center
+				height: 50px
+				background-color: #EEE
+				border: none 
+				border: 2px solid transparent
+				color: $darkblue
+
+				&:focus
+					outline: none 
+					border: 2px solid fade-out($darkblue, .5)
+
+			.con-btn
+				+transition(500ms ease-out)
+				background-color: $darkblue
+				color: white 
+				font-family: 'Oswald'
+				text-transform: uppercase 
+				letter-spacing: 2px 
+				padding: 25px
+				font-weight: 300
+				line-height: 0
+				+transform(translateZ(0))
+				box-shadow: inset 0 0 0 4px $darkblue, 0 0 1px rgba(0, 0, 0, 0)
+				backface-visibility: hidden
+				transition-property: background 
+				border: none
+
+				&:hover
+					background: none 
+					color: $darkblue
+
+
+
+	.consultation-content
+		max-width: 800px
+		margin: 0 auto
+		padding: 0 10px
+
+		.h1
+			+position(absolute, -5% null null 50%)
+			margin-left: -120px
+
+
+		h3
+			letter-spacing: 2px
+			color: $darkblue
+			padding: 50px 0 25px 0
+			margin: 0
+
+		p
+			line-height: 30px 
+			color: #333
+
+		p:nth-child(4)
+			color: $darkblue
+			padding-bottom: 40px
+
+		a 
+			padding: 15px 20px
+			background-color: $darkblue
+			color: white 
+			font-family: 'Oswald'
+			font-weight: 300
+			text-decoration: none 
+			text-transform: uppercase 
+			letter-spacing: 2px
+			display: inline-block
+			vertical-align: middle
+			+transform(translateZ(0))
+			box-shadow: inset 0 0 0 4px $darkblue, 0 0 1px rgba(0, 0, 0, 0)
+			backface-visibility: hidden
+			+transition(500ms ease-out)
+			transition-property: background 
+	
+
+			&:hover
+				background: none
+				color: $darkblue
+

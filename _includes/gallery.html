@@ -1,0 +1,35 @@
+<section id="gallery">
+	<div class="work-slider">
+		<div class="image-wrap">
+			<div class="image-container">
+				{% for image in site.data.settings.images %}
+				<div class="image-unit">
+					<div class="image" data-work="{{image.image}}" style="background-image: url(assets/images/{{image.image}}/thumb.jpg)"></div>
+					<h3>{{image.title}}</h3>
+					<p>{{image.name}}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="project-wrap">
+			<div class="project-container">
+				<i class="ion-chevron-left"></i>
+				<div class="project">
+					<div class="title"></div>
+					<div class="project-content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="view-wrap">
+		<a href="" class="view-more">View All</a>
+	</div>
+	<div class="all-gallery">
+		{% for image in site.data.settings.gallery %}
+		<div class="img-unit" style='background-image:url(assets/images/view-more-gallery/{{image.image}}.jpg)'>
+			<div class="overlay"><strong>{{ image.name }}</strong></div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="back-btn">Go Back</div>
+</section>

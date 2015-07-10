@@ -1,7 +1,7 @@
-# beach-resorts
+# beach-retreat
 Mock site for beach resort reservations
 
-View Site At http://dj51234.github.io/Beach-Retreat
+View Site At http://dj51234.github.io/BeachRetreat
 
 To do:
 - ̶H̶e̶a̶d̶e̶r̶̶

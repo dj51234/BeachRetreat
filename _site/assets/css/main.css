@@ -486,8 +486,8 @@ th {
   transform: scaleY(1); }
 
 .all-gallery .img-unit:hover .overlay {
-  -webkit-animation: animation 1000ms linear both;
-  animation: animation 1000ms linear both; }
+  -webkit-animation: animation 1500ms linear both;
+  animation: animation 1500ms linear both; }
 
 /* Generated with Bounce.js. Edit at http://goo.gl/mtQ2Zp */
 @-webkit-keyframes animation {
@@ -694,7 +694,7 @@ header .mobile-nav {
           text-decoration: none;
           line-height: 60px;
           text-transform: uppercase;
-          padding: 15px 150px;
+          padding: 15px 100px;
           font-family: "Oswald";
           font-weight: 300;
           letter-spacing: 3px; }
@@ -777,7 +777,7 @@ header .mobile-nav {
           .main header .nav ul li a {
             color: white;
             text-decoration: none;
-            padding: 22px 25px 16px 25px;
+            padding: 19px 25px 16px 25px;
             -webkit-transition: all 300ms ease-in-out;
             -moz-transition: all 300ms ease-in-out;
             transition: all 300ms ease-in-out; }
@@ -823,7 +823,7 @@ header .mobile-nav {
       margin-left: -165px; }
       .main header .main-heading .logo {
         left: 50%;
-        top: -60px;
+        top: 165px;
         margin-left: -30px;
         float: none; }
       .main header .main-heading h1 {
@@ -1203,6 +1203,9 @@ header .mobile-nav {
     background: none;
     color: #0c2e72; }
 
+@media (max-width: 750px) {
+  #gallery .work-slider .project-container .ion-chevron-left {
+    left: 5px; } }
 #consultation {
   background-color: #FFF;
   position: relative;
@@ -1619,6 +1622,10 @@ header .mobile-nav {
         #footer .footer-wrap .footer-nav a:hover {
           border-bottom: 2px solid white; }
 
+@media (max-width: 450px) {
+  #footer .footer-wrap {
+    max-width: 350px;
+    margin-left: -170px; } }
 body {
   font-family: "Arvo", sans-serif;
   z-index: 0;

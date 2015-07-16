@@ -22,7 +22,7 @@
 		padding-bottom: 50px
 
 		.image-container
-			max-width: 100%
+			max-width: 60%
 			+display(flex)
 			margin: 0 auto
 			+align-items(center)
@@ -34,17 +34,12 @@
 				margin: 50px auto
 				text-align: center
 				padding: 10px 10px 0 10px
-				height: 400px
-				width: 300px
-				background-color: #FFF
-				border: 1px solid $darkblue
+				height: 250px
+				width: 200px
 				position: relative 
-				// transform: translate(-1000px, 0px)
-
-				&:nth-child(3) 
-
-					p
-						line-height: 30px
+				
+				p
+					line-height: 30px
 
 				h3
 					color: $darkblue
@@ -219,12 +214,49 @@
 		background: none 
 		color: $darkblue
 
+@media (max-width: 1100px)
+
+	#gallery
+		background-color: #EEE
+		text-align: center
+		overflow-x: hidden
+		padding: 80px 0 120px 0
+
+		.image-wrap
+
+			.image-container
+				+flex-direction(column)
+
+				.image-unit
+					width: 400px
+
+				.image 
+
+					width: 400px
+					height: 200px
+					margin: 0 auto
+
 @media (max-width: 750px)	
 	#gallery 
 		.work-slider
 			.project-container
 				.ion-chevron-left
 					left: 5px
+@media (max-width: 690px)
+	#gallery
+
+		.image-wrap
+
+			.image-container
+				+flex-direction(row)
+
+				.image-unit
+					width: 200px
+
+				.image 
+
+					width: 200px
+					
 
 	
 

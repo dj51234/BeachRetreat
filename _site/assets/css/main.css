@@ -948,7 +948,7 @@ header .mobile-nav {
     float: left;
     padding-bottom: 50px; }
     #gallery .image-wrap .image-container, #gallery .project-wrap .image-container {
-      max-width: 100%;
+      max-width: 60%;
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -990,12 +990,10 @@ header .mobile-nav {
         margin: 50px auto;
         text-align: center;
         padding: 10px 10px 0 10px;
-        height: 400px;
-        width: 300px;
-        background-color: #FFF;
-        border: 1px solid #0c2e72;
+        height: 250px;
+        width: 200px;
         position: relative; }
-        #gallery .image-wrap .image-container .image-unit:nth-child(3) p, #gallery .project-wrap .image-container .image-unit:nth-child(3) p {
+        #gallery .image-wrap .image-container .image-unit p, #gallery .project-wrap .image-container .image-unit p {
           line-height: 30px; }
         #gallery .image-wrap .image-container .image-unit h3, #gallery .project-wrap .image-container .image-unit h3 {
           color: #0c2e72;
@@ -1203,9 +1201,48 @@ header .mobile-nav {
     background: none;
     color: #0c2e72; }
 
+@media (max-width: 1100px) {
+  #gallery {
+    background-color: #EEE;
+    text-align: center;
+    overflow-x: hidden;
+    padding: 80px 0 120px 0; }
+    #gallery .image-wrap .image-container {
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column; }
+      #gallery .image-wrap .image-container .image-unit {
+        width: 400px; }
+      #gallery .image-wrap .image-container .image {
+        width: 400px;
+        height: 200px;
+        margin: 0 auto; } }
 @media (max-width: 750px) {
   #gallery .work-slider .project-container .ion-chevron-left {
     left: 5px; } }
+@media (max-width: 690px) {
+  #gallery .image-wrap .image-container {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row; }
+    #gallery .image-wrap .image-container .image-unit {
+      width: 200px; }
+    #gallery .image-wrap .image-container .image {
+      width: 200px; } }
 #consultation {
   background-color: #FFF;
   position: relative;

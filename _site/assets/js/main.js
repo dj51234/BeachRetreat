@@ -55,12 +55,13 @@ function projectLoad() {
 
 	$.ajaxSetup({cache:true});
 
-	$('.image-unit .image').click(function() {
+	$('.image-unit .image').click(function(event) {
 		var $this = $(this);
 		var workLoad = $this.data('work');
 		var newHTML = 'work/' + workLoad + '.html';
 		var newTitle = $this.parent().find('.loadTitle').text();
 
+		event.preventDefault();
 		$('.project-content').load(newHTML);
 		$('.project .title').text(newTitle);
 		

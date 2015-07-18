@@ -948,7 +948,7 @@ header .mobile-nav {
     float: left;
     padding-bottom: 50px; }
     #gallery .image-wrap .image-container, #gallery .project-wrap .image-container {
-      max-width: 60%;
+      max-width: 100%;
       display: -webkit-box;
       display: -moz-box;
       display: box;
@@ -1224,6 +1224,18 @@ header .mobile-nav {
         width: 400px;
         height: 200px;
         margin: 0 auto; } }
+@media (max-width: 906px) {
+  #about .h1 {
+    top: 96%; } }
+@media (max-width: 623px) {
+  #about .h1 {
+    top: 96.5%; } }
+@media (max-width: 623px) {
+  #about .h1 {
+    top: 97%; } }
+@media (max-width: 362px) {
+  #about .h1 {
+    top: 97.5%; } }
 @media (max-width: 750px) {
   #gallery .work-slider .project-container .ion-chevron-left {
     left: 5px; } }
@@ -1238,7 +1250,16 @@ header .mobile-nav {
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
     flex-direction: row;
-    -ms-flex-direction: row; }
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify; }
     #gallery .image-wrap .image-container .image-unit {
       width: 200px; }
     #gallery .image-wrap .image-container .image {
@@ -1424,7 +1445,8 @@ header .mobile-nav {
     justify-content: space-around;
     -ms-flex-pack: distribute; }
     #testimonials .ul .face-unit {
-      display: block; } }
+      display: block;
+      padding-right: 0; } }
 @media (max-width: 830px) {
   #testimonials .ul {
     display: -webkit-box;
@@ -1620,6 +1642,10 @@ header .mobile-nav {
   #contact .h1 {
     font-size: 1.5em;
     margin-left: -160px; } }
+@media (max-width: 350px) {
+  #contact .h1 {
+    font-size: 1.2em;
+    margin-left: -141px; } }
 #footer {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/bg.jpg) 0 200px fixed no-repeat;
   background-size: cover;
@@ -1645,7 +1671,6 @@ header .mobile-nav {
       margin: 40px auto 20px;
       display: inline-block; }
     #footer .footer-wrap p {
-      padding-top: -10px;
       color: white; }
     #footer .footer-wrap .footer-nav {
       pointer-events: auto; }
@@ -1659,6 +1684,13 @@ header .mobile-nav {
         #footer .footer-wrap .footer-nav a:hover {
           border-bottom: 2px solid white; }
 
+@media (max-width: 478px) {
+  #footer .footer-wrap {
+    margin-bottom: -20px; }
+    #footer .footer-wrap .footer-nav {
+      line-height: 30px; }
+      #footer .footer-wrap .footer-nav a:first-child {
+        margin-left: 10px; } }
 @media (max-width: 450px) {
   #footer .footer-wrap {
     max-width: 350px;

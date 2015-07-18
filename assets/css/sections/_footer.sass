@@ -29,7 +29,6 @@
 			display: inline-block
 
 		p 
-			padding-top: -10px
 			color: white
 
 		.footer-nav
@@ -44,8 +43,27 @@
 
 				&:hover
 					border-bottom: 2px solid white
+
+@media (max-width: 478px)
+	#footer
+
+		.footer-wrap
+			margin-bottom: -20px
+			
+			.footer-nav	
+				line-height: 30px
+
+				a 
+
+					&:first-child
+						margin-left: 10px
+
+
+
+
 @media (max-width: 450px)
 	#footer 
 		.footer-wrap
 			max-width: 350px
 			margin-left: -170px
+

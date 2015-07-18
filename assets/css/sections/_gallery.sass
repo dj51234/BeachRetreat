@@ -22,7 +22,7 @@
 		padding-bottom: 50px
 
 		.image-container
-			max-width: 60%
+			max-width: 100%
 			+display(flex)
 			margin: 0px auto 75px
 			+align-items(center)
@@ -236,6 +236,35 @@
 					height: 200px
 					margin: 0 auto
 
+@media (max-width: 906px)
+
+	#about
+
+		.h1
+			top: 96%
+
+@media (max-width: 623px)
+
+	#about
+
+		.h1
+			top: 96.5%
+
+@media (max-width: 623px)
+
+	#about
+
+		.h1
+			top: 97%
+
+@media (max-width: 362px)
+
+	#about
+
+		.h1
+			top: 97.5%
+
+
 @media (max-width: 750px)	
 	#gallery 
 		.work-slider
@@ -249,6 +278,7 @@
 
 			.image-container
 				+flex-direction(row)
+				+justify-content(space-between)
 
 				.image-unit
 					width: 200px

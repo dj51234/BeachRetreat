@@ -823,7 +823,7 @@ header .mobile-nav {
       margin-left: -165px; }
       .main header .main-heading .logo {
         left: 50%;
-        top: 165px;
+        top: 275px;
         margin-left: -30px;
         float: none; }
       .main header .main-heading h1 {
@@ -956,7 +956,7 @@ header .mobile-nav {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      margin: 0 auto;
+      margin: 0px auto 75px;
       -webkit-box-align: center;
       -moz-box-align: center;
       box-align: center;

@@ -119,12 +119,12 @@ function mobileNav() {
 function galleryLoad() {
 	$('.view-more').click(function(event) {
 		event.preventDefault();
-		$('.all-gallery, .back-btn').toggle(50);
+		$('.all-gallery, .back-btn').slideToggle('slow','swing');
 
 	});
 	$('.back-btn').click(function(event) {
 		event.preventDefault();
-		$('.all-gallery').hide(200);
+		$('.all-gallery').slideToggle('slow','swing');
 		$(this).hide();
 
 	});

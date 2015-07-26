@@ -28,7 +28,7 @@ gallery:
 
 
 testimonials:
-- {name: 'Bob Saget', image: '0'}
-- {name: 'Hello Kitty', image: '14'}
-- {name: 'Bart Wagner', image: '2'}
+- {name: 'Hank Rowley', image: '0', quote: "'Beach Retreat was the perfect answer for me when I didn't quite know what I wanted to do.  They gave me numerous options to choose from so I had the perfect vacation!'"}
+- {name: 'Carmen Liz', image: '14', quote: "'I am not a big vacation person so I was struggling with ways to find good vacation locations.  Beach Retreat does a great job of giving you a good amount of spots to choose from!'"}
+- {name: 'Everette Harlan', image: '2', quote: "'I normally only vacation to the same places all of the time because I didn't know where to search for new vacation spots.  Beach Retreat does a great job by putting all of your choices in one website!'"}
 
